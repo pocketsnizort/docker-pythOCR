@@ -13,7 +13,7 @@ docker run --rm -it \
 -v /path/to/my/input/dir:/input:ro \
 -v /path/to/my/output/dir:/output \
 -v /path/to/my/config:/userconfig:ro \
-pocketsnizort/pythocr --mode ful -c /userconfig/my-conf.ini --timid --vpy /vpys/my-vpy.vpy /input/my-video.mp4
+pocketsnizort/pythocr --mode full -c /userconfig/my-conf.ini --timid --vpy /vpys/my-vpy.vpy /input/my-video.mp4
 ```
 
 Some explaination:
