@@ -30,8 +30,8 @@ RUN apt-get update && \
     mkdir /temp && \
     git clone $REPO_URL
 
-ADD https://github.com/tesseract-ocr/tessdata/raw/master/fra.traineddata "/usr/share/tesseract-ocr/tessdata/."
-ADD https://github.com/tesseract-ocr/tessdata/raw/master/eng.traineddata "/usr/share/tesseract-ocr/tessdata/."
+ADD https://github.com/tesseract-ocr/tessdata/raw/3.04.00/fra.traineddata "/usr/share/tesseract-ocr/tessdata/."
+ADD https://github.com/tesseract-ocr/tessdata/raw/3.04.00/eng.traineddata "/usr/share/tesseract-ocr/tessdata/."
 
 ENTRYPOINT ["python3", "/pythOCR/pythoCR.py", "-wd", "/tmp", "-o", "/output"]
 CMD ["--help"]
