@@ -15,7 +15,6 @@ RUN apt-get update && \
     apt-get update -y --fix-missing && \
     apt-get install -y \
         enchant \
-        ffmpeg \
         git \
         myspell-fr \
         python3-pip \
@@ -26,6 +25,8 @@ RUN apt-get update && \
         colorama \
         configargparse \
         pyEnchant \
+        numpy \
+        opencv-python \
         tqdm && \
     mkdir /temp && \
     git clone $REPO_URL
